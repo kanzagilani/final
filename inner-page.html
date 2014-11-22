@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inner Page</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-3 col-md-3 col-xs-12 hidden-xs">
+        <div class="logo"> <a href="#"><img src="images/logo.png" class="img-responsive" alt=""/></a> </div>
+      </div>
+      <div class="col-lg-8 col-sm-9 col-md-9 col-xs-12 no-padding">
+        <nav class="navbar navbar-default bg" role="navigation"> 
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          </div>
+          
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Medicine Assistant</a></li>
+              <li class="active"><a href="#">Exercise Assistant</a></li>
+              <li class="active"><a href="#">Food Assistant</a></li>
+              <li class="active"><a href="#">Social Activities</a></li>
+              <li class="active"><a href="#">Account</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse --> 
+          
+        </nav>
+      </div>
+      <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 hidden-lg hidden-sm hidden-md">
+        <div class="logo"> <a href="#"><img src="images/logo.png" class="img-responsive"  alt=""/></a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="inner-page">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-sm-3 col-md-3 col-xs-6">
+      <div class="post">
+        <div class="post-img"> <i class="fa fa-heart"></i> </div>
+        <div class="post-content">
+          <p>Medicine Assistant</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nibh odio. Ut tempus diam nisl, et ultricies quam dapibus interdum. Aenean tempor dapibus pretium. Vivamus nibh mi, condimentum sed faucibus in, blandit ac risus. Donec mattis sem justo, at interdum urna aliquet non. Curabitur lacus mauris, vehicula ut laoreet eget, euismod a diam. Duis eleifend nunc in fringilla sodales. Etiam ac elit quis nulla imperdiet pellentesque et et augue. Vivamus id porttitor lorem.</p>
+    </div>
+    <div class="col-lg-12 contact-form">
+      <button type="submit" class="btn pull-right" data-toggle="modal" data-target="#myModal"> Add </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">
+                <h3> Documents</h3>
+              </h4>
+            </div>
+            <div class="modal-body">
+              <form role="form"  data-toggle="validator" method="post">
+                <div class="form-group">
+                  <input type="text"  class="form-control"  placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <div class="select-field select-field custom-dropdown custom-dropdown--white select-field-2 no-margin-right">
+                    <select class="form-control custom-dropdown__select custom-dropdown__select--white" required>
+                      <option value="0">Type</option>
+                      <option value="Prescryption">Prescryption</option>
+                      <option value="Test Report">Test Report</option>
+                      <option value="Xray Report">Xray Report</option>
+                      <option value="Operative Report(OP)">Operative Report(OP</option>
+                      <option value="Discharge Summary (DS):">Radiology Report: </option>
+                      <option value="Pathology Report:">Pathology Report </option>
+                        <option value="Laboratory Report: :">Laboratory Report </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3" placeholder="Description"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="date"  class="form-control"  placeholder="Date" required>
+                </div>
+                <div class="form-group">
+                  <div class="form-control cover-logo"><span class="glyphicon glyphicon-camera" onClick="clickFunction('userfile')"></span>
+                    <input type="file" style="display:none;" multiple id="userfile" name="userfile">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn pull-right">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-12">
+      <table class="table">
+        <caption>
+        Documents
+        </caption>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      
+<div class="col-lg-12 contact-form">
+      <button type="submit" id="checkbox-unchecked" class="btn pull-right" data-toggle="modal" data-target="#myModal1">Add</button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">
+                <h3> Medicine</h3>
+              </h4>
+            </div>
+            <div class="modal-body">
+              <form role="form"  data-toggle="validator" method="post">
+                <div class="form-group">
+                  <input type="text"  class="form-control"  placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" data-minlength="6" class="form-control" id="inputPassword" placeholder="Disease" required>
+                </div>
+                <div class="form-group">
+                  <label> Stock
+                    <input id="click" type="checkbox">
+                  </label>
+                </div>
+                <div class="number-field">
+                  <div class="form-group">
+                    <label>Number of pills</label>
+                    <input type="number"  class="form-control" id="inputPassword" placeholder="Number of pills" max="1000" min="0"  required>
+                  </div>
+                  <div class="form-group">
+                    <label>Remind me after</label>
+                    <input type="number"  class="form-control" id="inputPassword" placeholder="Remind me after" max="1000" min="0" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="number" data-minlength="6" class="form-control" id="dossage" placeholder="Dossage in mg" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" data-minlength="6" class="form-control" id="instruction" placeholder="Instruction" required>
+                </div>
+                <div class="number-field2">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Before Food</label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">After Food</label>
+                  </div>
+                </div>
+                <div class "reminder">
+                <label>Reminder</label>
+                <div class="form-group67">
+                  <input type="time" data-minlength="6" class="form-control" id="time1"     placeholder="Reminder" required>  
+                </div>
+                <div class="form-group67">
+                  <input type="week" data-minlength="6" class="form-control" id="days" placeholder="days" required>  
+                </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="submit"  class="btn pull-right">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>      
+      
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(e) {
+ $(".number-field").hide();
+ $(".number-field1").hide();
+ $(".number-field2").hide();
+ $('input:checkbox').removeAttr('checked');
+});
+
+
+$( "#click" ).click(function() {
+
+$( ".number-field" ).slideToggle( "slow" );
+});
+
+
+$( "#instruction" ).click(function() {
+
+$( ".number-field2" ).slideToggle( "slow" );
+});
+$( "#checkbox-unchecked" ).click(function() {
+$('input:checkbox').removeAttr('checked');
+$(".number-field").hide();
+$(".number-field1").hide();
+$(".number-field2").hide();
+});
+
+
+</script>
+</body>
+</html>
